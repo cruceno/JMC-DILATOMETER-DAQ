@@ -1,0 +1,160 @@
+CreateDirectory: "C:\Python27\Lib\site-packages\pyvisa" created
+File: overwriteflag=0, allowskipfilesflag=2, name="python.ico"
+File: wrote 15086 to "C:\Python27\Lib\site-packages\pyvisa\python.ico"
+File: overwriteflag=0, allowskipfilesflag=2, name="license.txt"
+File: wrote 1311 to "C:\Python27\Lib\site-packages\pyvisa\license.txt"
+CreateDirectory: "C:\Python27\Lib\site-packages" (1)
+File: overwriteflag=0, allowskipfilesflag=2, name="visa.py"
+File: wrote 26 to "C:\Python27\Lib\site-packages\visa.py"
+CreateDirectory: "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info" (1)
+CreateDirectory: "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info" created
+File: overwriteflag=0, allowskipfilesflag=2, name="PKG-INFO"
+File: wrote 1158 to "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info\PKG-INFO"
+File: overwriteflag=0, allowskipfilesflag=2, name="SOURCES.txt"
+File: wrote 668 to "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info\SOURCES.txt"
+File: overwriteflag=0, allowskipfilesflag=2, name="dependency_links.txt"
+File: wrote 1 to "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info\dependency_links.txt"
+File: overwriteflag=0, allowskipfilesflag=2, name="top_level.txt"
+File: wrote 12 to "C:\Python27\Lib\site-packages\PyVISA-1.4-py2.7.egg-info\top_level.txt"
+CreateDirectory: "C:\Python27\Lib\site-packages\pyvisa" (1)
+File: overwriteflag=0, allowskipfilesflag=2, name="__init__.py"
+File: wrote 1949 to "C:\Python27\Lib\site-packages\pyvisa\__init__.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="visa.py"
+File: wrote 32702 to "C:\Python27\Lib\site-packages\pyvisa\visa.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="visa_attributes.py"
+File: wrote 11685 to "C:\Python27\Lib\site-packages\pyvisa\visa_attributes.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="visa_exceptions.py"
+File: wrote 3887 to "C:\Python27\Lib\site-packages\pyvisa\visa_exceptions.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="visa_messages.py"
+File: wrote 23195 to "C:\Python27\Lib\site-packages\pyvisa\visa_messages.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="visa_study.py"
+File: wrote 15484 to "C:\Python27\Lib\site-packages\pyvisa\visa_study.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43.py"
+File: wrote 43148 to "C:\Python27\Lib\site-packages\pyvisa\vpp43.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43_attributes.py"
+File: wrote 7187 to "C:\Python27\Lib\site-packages\pyvisa\vpp43_attributes.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43_constants.py"
+File: wrote 18805 to "C:\Python27\Lib\site-packages\pyvisa\vpp43_constants.py"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43_types.py"
+File: wrote 5664 to "C:\Python27\Lib\site-packages\pyvisa\vpp43_types.py"
+CreateDirectory: "C:\Python27\Lib\site-packages\pyvisa\doc" (1)
+CreateDirectory: "C:\Python27\Lib\site-packages\pyvisa\doc" created
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43.txt"
+File: wrote 53447 to "C:\Python27\Lib\site-packages\pyvisa\doc\vpp43.txt"
+CreateDirectory: "C:\Python27\Lib\site-packages" (1)
+CreateDirectory: "C:\Python27\Lib\site-packages" (1)
+CreateDirectory: "C:\Python27\Scripts" (1)
+CreateDirectory: "C:\Python27\Scripts" (1)
+CreateDirectory: "C:\Python27\DLLs" (1)
+CreateDirectory: "C:\Python27\DLLs" (1)
+CreateDirectory: "C:\Python27" (1)
+CreateDirectory: "C:\Python27" (1)
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa" (1)
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa" created
+File: overwriteflag=0, allowskipfilesflag=2, name="COPYING"
+File: wrote 1222 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\COPYING"
+File: overwriteflag=0, allowskipfilesflag=2, name="ChangeLog"
+File: wrote 28275 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\ChangeLog"
+File: overwriteflag=0, allowskipfilesflag=2, name="Python GPIB etc. support with PyVISA.URL"
+File: wrote 56 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\Python GPIB etc. support with PyVISA.URL"
+File: overwriteflag=0, allowskipfilesflag=2, name="Python GPIB etc. support with PyVISA.htm"
+File: wrote 9019 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\Python GPIB etc. support with PyVISA.htm"
+File: overwriteflag=0, allowskipfilesflag=2, name="README"
+File: wrote 614 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\README"
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html" (1)
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html" created
+File: overwriteflag=0, allowskipfilesflag=2, name=".buildinfo"
+File: wrote 234 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\.buildinfo"
+File: overwriteflag=0, allowskipfilesflag=2, name="genindex.html"
+File: wrote 13714 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\genindex.html"
+File: overwriteflag=0, allowskipfilesflag=2, name="index.html"
+File: wrote 12194 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\index.html"
+File: overwriteflag=0, allowskipfilesflag=2, name="objects.inv"
+File: wrote 667 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\objects.inv"
+File: overwriteflag=0, allowskipfilesflag=2, name="py-modindex.html"
+File: wrote 3721 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\py-modindex.html"
+File: overwriteflag=0, allowskipfilesflag=2, name="pyvisa.html"
+File: wrote 74366 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\pyvisa.html"
+File: overwriteflag=0, allowskipfilesflag=2, name="search.html"
+File: wrote 3466 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\search.html"
+File: overwriteflag=0, allowskipfilesflag=2, name="searchindex.js"
+File: wrote 14862 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\searchindex.js"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43.html"
+File: wrote 153557 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\vpp43.html"
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_sources" (1)
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_sources" created
+File: overwriteflag=0, allowskipfilesflag=2, name="index.txt"
+File: wrote 6916 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_sources\index.txt"
+File: overwriteflag=0, allowskipfilesflag=2, name="pyvisa.txt"
+File: wrote 36538 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_sources\pyvisa.txt"
+File: overwriteflag=0, allowskipfilesflag=2, name="vpp43.txt"
+File: wrote 53447 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_sources\vpp43.txt"
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static" (1)
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static" created
+File: overwriteflag=0, allowskipfilesflag=2, name="ajax-loader.gif"
+File: wrote 673 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\ajax-loader.gif"
+File: overwriteflag=0, allowskipfilesflag=2, name="basic.css"
+File: wrote 8463 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\basic.css"
+File: overwriteflag=0, allowskipfilesflag=2, name="comment-bright.png"
+File: wrote 3500 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\comment-bright.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="comment-close.png"
+File: wrote 3578 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\comment-close.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="comment.png"
+File: wrote 3445 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\comment.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="contents.png"
+File: wrote 202 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\contents.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="doctools.js"
+File: wrote 6840 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\doctools.js"
+File: overwriteflag=0, allowskipfilesflag=2, name="down-pressed.png"
+File: wrote 368 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\down-pressed.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="down.png"
+File: wrote 363 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\down.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="file.png"
+File: wrote 392 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\file.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="jquery.js"
+File: wrote 72174 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\jquery.js"
+File: overwriteflag=0, allowskipfilesflag=2, name="minus.png"
+File: wrote 199 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\minus.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="navigation.png"
+File: wrote 218 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\navigation.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="plus.png"
+File: wrote 199 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\plus.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="pygments.css"
+File: wrote 3993 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\pygments.css"
+File: overwriteflag=0, allowskipfilesflag=2, name="searchtools.js"
+File: wrote 16043 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\searchtools.js"
+File: overwriteflag=0, allowskipfilesflag=2, name="sphinxdoc.css"
+File: wrote 6086 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\sphinxdoc.css"
+File: overwriteflag=0, allowskipfilesflag=2, name="underscore.js"
+File: wrote 8574 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\underscore.js"
+File: overwriteflag=0, allowskipfilesflag=2, name="up-pressed.png"
+File: wrote 372 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\up-pressed.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="up.png"
+File: wrote 363 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\up.png"
+File: overwriteflag=0, allowskipfilesflag=2, name="websupport.js"
+File: wrote 25246 to "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\html\_static\websupport.js"
+CreateDirectory: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa" (1)
+CreateDirectory: "C:\Python27" (1)
+RMDir: "C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa"
+RMDir: RemoveDirectory("C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\")
+RMDir: RemoveDirectory failed("C:\Program Files (x86)\pythonxy\doc\Libraries\pyvisa\")
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\pyvisa" ""="C:\Python27\Lib\site-packages\pyvisa"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\pyvisa" "Version"="1.4"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\pyvisa" "ParentPath"="C:\Python27"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\pyvisa" "URL"="http://pyvisa.sourceforge.net"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "DisplayName"="Python 2.7 - pyvisa 1.4"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "UninstallString"="C:\Python27\Lib\site-packages\pyvisa\Uninstall.exe"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "InstallLocation"="C:\Python27\Lib\site-packages\pyvisa"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "DisplayIcon"="C:\Python27\Lib\site-packages\pyvisa\python.ico"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "Publisher"="pythonxy.com"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "DisplayVersion"="1.4"
+WriteRegDWORD: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "NoModify"="0x00000001"
+WriteRegDWORD: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "NoRepair"="0x00000001"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "ParentDisplayName"="Python(x,y)"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Python 2.7 - pyvisa 1.4" "ParentKeyName"="Python(x,y)"
+WriteRegStr: "HKEY_LOCAL_MACHINE\Software\Python(x,y)\uninstall" "pyvisa"="C:\Python27\Lib\site-packages\pyvisa"
+created uninstaller: 10043, "C:\Python27\Lib\site-packages\pyvisa\Uninstall.exe"
+IfFileExists: file "C:\Python27\Scripts\pyvisa_postinstall.py" does not exist, jumping 542
+IfFileExists: file "C:\Python27\Scripts\pyvisa_win_post_install.py" does not exist, jumping 549
+Delete: DeleteFile("C:\Users\Javier\AppData\Local\Temp\nsl9FD1.tmp\System.dll")
+RMDir: RemoveDirectory("C:\Users\Javier\AppData\Local\Temp\nsl9FD1.tmp\")
