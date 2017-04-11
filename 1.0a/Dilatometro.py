@@ -646,8 +646,37 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
 def main():
     logging.basicConfig (filename='./dilatometro_log.txt', level=logging.WARNING)
     app = QtGui.QApplication( sys.argv )
+    # Create a pixmap - not needed if you have your own.
+    pixmap = QtGui.QPixmap('splash.png')
+ 
+    splash = QtGui.QSplashScreen(pixmap)
+    progressBar = QtGui.QProgressBar(splash)
+    progressBar.setGeometry(splash.width()/10, 8*splash.height()/10,
+                       8*splash.width()/10, splash.height()/10)
+    
+    QtGui.QFontDatabase.addApplicationFont("./fonts/EXO2REGULAR.TTF")
+    font=QtGui.QFont('Exo 2')
+    #font.setFamily('Exo 2')
+    font.setBold(False)
+    font.setItalic(True)
+    font.setPixelSize(23)
+    #font.setStretch(125)
+    splash.setFont(font)
+    splash.show()
+    splash.showMessage('DILATOMETRO Ver.:1.0a\n Loading User Interface...', QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
+    
+    for i in range(0, 101):
+        progressBar.setValue(i)
+        # Do something which takes some time.
+        t = time.time()
+        while time.time() < t + 0.1:
+            app.processEvents()
+    
+
+
     DAQ = Main()
     DAQ.show()
+    splash.finish(DAQ)
     sys.exit( app.exec_() )
 if __name__ == '__main__':
     main()
