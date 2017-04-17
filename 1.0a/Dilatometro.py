@@ -77,6 +77,7 @@ class Test_Dilatometria ( QtCore.QThread ):
         self.time_stamp = 0
         self.delay=1/data_per_second
         self.lvdt_calibration = lvdt_calibration
+        print self.lvdt_calibration
         self.savedata = False
         self.outfile = outfile
         self.errorfile= outfile+'_errorlog.txt'
@@ -141,7 +142,7 @@ class Test_Dilatometria ( QtCore.QThread ):
                     continue
             else: 
                 # print self.lvdt.board
-                lvdt_data= UL.cbVIn( int (self.lvdt.board),
+                lvdt_value= UL.cbVIn( int (self.lvdt.board),
                                      int (self.lvdt.channel),
                                      UL.cbGetConfig( UL.BOARDINFO,
                                                      int (self.lvdt.board),
@@ -154,12 +155,12 @@ class Test_Dilatometria ( QtCore.QThread ):
             #====================================================================================
             
             temp_data = float ( temp_data ) *1000
-            lvdt_data = float(lvdt_data) 
-            lvdt_data_mm=float (lvdt_data)*self.lvdt_calibration #1.7926 mm/V
+            lvdt_data = float(lvdt_value) 
+            lvdt_data_um=float (lvdt_value)*self.lvdt_calibration #62.8 um/V
             temp_data_celcius=self.termo.temperature_calibration(temp_data) # Pasar de milivoltios a grados celcius
                 
 #           Guardar array
-            data = [self.time_stamp, temp_data_celcius, lvdt_data_mm, temp_data, lvdt_data]    
+            data = [self.time_stamp, temp_data_celcius, lvdt_data_um, temp_data, lvdt_data]    
             # print data
             # Si se comienza el inicio de grabacion de datos se guardara todo en el archivo de salida 
             # indicado
@@ -172,7 +173,7 @@ class Test_Dilatometria ( QtCore.QThread ):
                     self.termo.dev.write( 'DISP:WIND2:TEXT "Guardando..."' )
                     
                 # Se arma linea de texto para guardar en el archivo
-                line = str ( data[0] ) + '\t' + str ( data[1] ) + '\t' + str ( data[2])+'\t'+str (data[3]) + '\n'
+                line = str ( data[0] ) + '\t' + str ( data[1] ) + '\t' + str ( data[2])+'\t'+str (data[3]) +'\t'+str (data[4]) + '\n'
                 # Se escribe linea en el archivo
                 self.fsock.write( line )
                 # Se cierra el archivo
@@ -182,7 +183,7 @@ class Test_Dilatometria ( QtCore.QThread ):
             else:
 #                 print 'Guardantdo temporal'
                 tempfsock = open( 'tempdata', 'w' )
-                line = str ( data[0] ) + '\t' + str ( data[1] ) + '\t' + str ( data[2] ) + '\n'
+                line = str ( data[0] ) + '\t' + str ( data[1] ) + '\t' + str ( data[2])+'\t'+str (data[3]) +'\t'+str (data[4]) + '\n'
                 tempfsock.write(line)
                 tempfsock.close()
 #             print 'Envisar senial'
@@ -354,7 +355,7 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
         for line in header.split( '\n' ):
             self.comented_header = self.comented_header + self.le_output_file_commentchar.text() + line + '\n'
         
-        labels='Tiempo (s) \t Temperatura (C)  \t Deformacion (mm) \t Temperatura (mV) \t Deformacion (mV) '
+        labels=self.le_output_file_commentchar.text()+'Tiempo (s) \t Temperatura (C)  \t Deformacion (um) \t Temperatura (mV) \t Deformacion (V) \n'
         # Encabezado mas linea de encabezados de tabla. 
         self.comented_header=self.comented_header+labels
         
@@ -407,8 +408,18 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
             temperature = {'type': 'pyvisa' if self.cbx_dilatometer_temperature_input.currentText() == 'Agilent Multimeter' else 'mcc', 
                            'channel':self.cbx_dilatometer_temperature_channel.itemData(self.cbx_dilatometer_temperature_channel.currentIndex()).toString() if self.cbx_dilatometer_temperature_input.currentText() == 'Agilent Multimeter' else 
                                     (self.cbx_dilatometer_temperature_channel.currentText(), self.sb_temperature_board_num.value()) }
-                
-            self.dilatometria.test( outfile, lvdt, temperature, self.sb_data_per_second.value(), self.dsb_lvdt_calibration_factor.value() )
+            print self.dsb_lvdt_calibration_factor.value()
+        #      outfile,
+        #      lvdt, 
+        #      temperature, 
+        #       lvdt_calibration, 
+        #       data_per_second 
+        
+            self.dilatometria.test( outfile,
+                                    lvdt,
+                                    temperature,
+                                    self.dsb_lvdt_calibration_factor.value(),
+                                    self.sb_data_per_second.value() )
             self.count = 0
             self.pb_start_save_data.setEnabled( True )
             self.pb_end.setEnabled( True )
@@ -627,7 +638,8 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
             else:
                 warn=str(time.time())+ 'Selected config file not found'
                 logging.warning(warn)
-    
+def SplashMouseEvent (event):
+    pass    
 def main():
     logging.basicConfig (filename='./dilatometro_log.txt', level=logging.WARNING)
     app = QtGui.QApplication( sys.argv )
@@ -638,7 +650,7 @@ def main():
     progressBar = QtGui.QProgressBar(splash)
     progressBar.setGeometry(splash.width()/10, 8*splash.height()/10,
                        8*splash.width()/10, splash.height()/10)
-    
+    splash.mousePressEvent=SplashMouseEvent
     QtGui.QFontDatabase.addApplicationFont("./fonts/EXO2REGULAR.TTF")
     font=QtGui.QFont('Exo 2')
     #font.setFamily('Exo 2')
