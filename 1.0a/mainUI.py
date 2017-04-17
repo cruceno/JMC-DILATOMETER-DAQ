@@ -195,7 +195,6 @@ class Ui_MainWindow(object):
         self.dsb_lvdt_calibration_factor.setDecimals(4)
         self.dsb_lvdt_calibration_factor.setMinimum(-999999.0)
         self.dsb_lvdt_calibration_factor.setMaximum(999999.0)
-        self.dsb_lvdt_calibration_factor.setProperty("value", 1.0)
         self.dsb_lvdt_calibration_factor.setObjectName(_fromUtf8("dsb_lvdt_calibration_factor"))
         self.gridLayout_3.addWidget(self.dsb_lvdt_calibration_factor, 2, 4, 1, 1)
         self.lb_data_per_second = QtGui.QLabel(self.gb_dilatometer_test_config)

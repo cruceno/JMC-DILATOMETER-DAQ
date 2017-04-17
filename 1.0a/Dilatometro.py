@@ -1,27 +1,19 @@
-#!./env/Scripts/python.exe
+#!../env/Scripts/python.exe
 # Importar librerias necesarias
-
 # Interfaz grafica
 from PyQt4 import QtCore, QtGui
 from mainUI import Ui_MainWindow
-
 # Comunicacion con sistema y manejo de puerto serie
 import os, sys, logging, time
-
 # Importar librerias para manejo de protocolos VISA y Measure Computing
 import MultimetrosAgilent, PlacasMeasureComputing
 import UniversalLibrary as UL
-
 #Importar libreria para cargar archivos de configuracion
 from configobj import ConfigObj
-
-
 #Funcion para pasar datos como si fueran un archivo de texto
 from StringIO import StringIO
-
 # Manejo numerico de datos
 import numpy as np
-
 # Librerias para graficar en el ploter
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 # from matplotlib.backends.backend_qt4agg import NavigationToolbar2QTAgg as NavigatioToolbar
@@ -162,11 +154,12 @@ class Test_Dilatometria ( QtCore.QThread ):
             #====================================================================================
             
             temp_data = float ( temp_data ) *1000
-            lvdt_data=float (lvdt_data)*self.lvdt_calibration #1.7926 mm/V
+            lvdt_data = float(lvdt_data) 
+            lvdt_data_mm=float (lvdt_data)*self.lvdt_calibration #1.7926 mm/V
             temp_data_celcius=self.termo.temperature_calibration(temp_data) # Pasar de milivoltios a grados celcius
                 
 #           Guardar array
-            data = [self.time_stamp, temp_data_celcius, lvdt_data, temp_data]    
+            data = [self.time_stamp, temp_data_celcius, lvdt_data_mm, temp_data, lvdt_data]    
             # print data
             # Si se comienza el inicio de grabacion de datos se guardara todo en el archivo de salida 
             # indicado
@@ -361,7 +354,7 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
         for line in header.split( '\n' ):
             self.comented_header = self.comented_header + self.le_output_file_commentchar.text() + line + '\n'
         
-        labels='Tiempo (s) \t Temperatura (C)  \t Deformacion (mm) \t Temperatura (mV)\n'
+        labels='Tiempo (s) \t Temperatura (C)  \t Deformacion (mm) \t Temperatura (mV) \t Deformacion (mV) '
         # Encabezado mas linea de encabezados de tabla. 
         self.comented_header=self.comented_header+labels
         
@@ -402,14 +395,6 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
             self.statusBar.showMessage( 'El campo que indica el archivo de destino no puede estar vacio' )
         else:
             outfile += '.txt'
-            header = 'Comentarios:' + self.ptx_header.toPlainText() + '\n'
-            self.comented_header = ''
-            for line in header.split( '\n' ):
-                self.comented_header = self.comented_header + self.le_output_file_commentchar.text() + line + '\n'
-            
-            labels='Tiempo (s) \t Temperatura (C)  \t Deformacion (mm) \n'
-            
-            self.comented_header=self.comented_header+labels
                
             # Nombres que identifican los multimetros utilizados para la adquisicion de datos
             #Configuracion de entradas
@@ -473,7 +458,7 @@ class Main( QtGui.QMainWindow, Ui_MainWindow ):
             self.lcd_var_3.display( str ( lvdt[-1] ) ) # Muestra Valor del LVDT
 
             # Muestra las pendientes de la recta de temperatura formada
-            # En funcion del tiempo (tomando solo los ultimpos 150 valores 
+            # en funcion del tiempo (tomando solo los ultimpos 150 valores 
             if np.size( lvdt ) >= 30:
                 temp_a=np.polyfit(time_np[-149:-1]/60, temp[-149:-1],1)[0] 
                 self.lcd_var_2.display( str ( temp_a ) )
